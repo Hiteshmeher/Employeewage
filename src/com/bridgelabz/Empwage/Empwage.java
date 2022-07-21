@@ -7,32 +7,40 @@ package com.bridgelabz.Empwage;
  */
 public class Empwage {
 	/**
-	 * initializing three final variables
+	 * initializing five final variables
 	 */
 	static final int WagePerHour = 20;
-	static final int FullDayHours = 8;
+	static final int FullDayHour = 8;
 	static final int PartTimeHour = 4;
+	static final int IsPartTime = 0;
+	static final int IsFulltime = 1;
 
 	public void dailywages() {
 		/**
-		 * initializing attendance as a random function that will generate 0 ,1 and 2
-		 * if 0 then Absent 
-		 * if 1 then Present
-		 * if 2 then Half day
-		 * Calculating daily wages for Present and Half day employee
+		 * initializing values
+		 * generating random number 0, 1, 2
+		 * if o the part time job
+		 * if 1 then present for the job
+		 * if 2 then absent
+		 * using switch case statement printing employee is present or not or part time
+		 * then calculating its daily wages
 		 */
 		int dailyWages = 0;
 		int attendance = (int) Math.floor(Math.random() * 10) % 3;
-		if (attendance == 0) {
-			System.out.println("Emloyee is absent");
-		} else if (attendance == 1) {
-			System.out.println("Employee is present");
-			dailyWages = WagePerHour * FullDayHours;
-			System.out.println("Daily Wages of Employee: " + dailyWages);
-		} else {
-			System.out.println("Employee is present for the Half day");
+		switch (attendance) {
+		case IsPartTime:
+			System.out.println("Employee is doing Half day");
 			dailyWages = WagePerHour * PartTimeHour;
-			System.out.println("Wages of the day for part time " + dailyWages);
+			System.out.println("Wages for the day is " + dailyWages);
+			break;
+		case IsFulltime:
+			System.out.println("Employee is present");
+			dailyWages = WagePerHour * FullDayHour;
+			System.out.println("Wages for the day is " + dailyWages);
+			break;
+		default:
+			System.out.println("oops !!! Employee is Absent today. ");
+			break;
 		}
 	}
 }
