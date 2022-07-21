@@ -16,6 +16,6 @@ public class EmployeeWage {
 		 */
 		System.out.println("< < < Welcome to Employee Wage Computation > > >\n");
 		Empwage emp = new Empwage();
-		emp.dailywages();
+		emp.monthlywages();
 	}
 }
