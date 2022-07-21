@@ -14,6 +14,7 @@ public class EmployeeWage {
 		 * Creating object of Empwage class
 		 * Calling Attendance method
 		 */
+		
 		System.out.println("< < < Welcome to Employee Wage Computation > > >\n");
 		Empwage emp = new Empwage();
 		emp.monthlywages();
