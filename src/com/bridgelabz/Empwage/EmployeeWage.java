@@ -11,8 +11,8 @@ public class EmployeeWage {
 	 */
 	public static void main(String[] args) {
 		/**
-		 * creating object of Empwage class
-		 * calling Attendance method
+		 * Creating object of Empwage class
+		 * Calling Attendance method
 		 */
 		System.out.println("< < < Welcome to Employee Wage Computation > > >");
 		Empwage emp = new Empwage();
