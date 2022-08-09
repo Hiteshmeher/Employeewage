@@ -1,7 +1,7 @@
 package com.bridgelabz.Empwage;
 /**
  * 
- * @author LENOVO
+ * @author HITESH
  *
  */
 public class EmployeeWage {
@@ -12,7 +12,7 @@ public class EmployeeWage {
 	public static void main(String[] args) {
 		/**
 		 * Creating object of Empwage class
-		 * Calling Attendance method
+		 * Calling Monthlywage method
 		 */
 		System.out.println("< < < Welcome to Employee Wage Computation > > >\n");
 		Empwage emp = new Empwage();

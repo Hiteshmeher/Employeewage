@@ -2,7 +2,7 @@ package com.bridgelabz.Empwage;
 
 /**
  * 
- * @author LENOVO
+ * @author HITESH
  *
  */
 public class Empwage {
